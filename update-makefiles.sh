@@ -1,11 +1,8 @@
 #!/bin/bash
 
-source system/tools/hidl/update-makefiles-helper.sh
+source $ANDROID_BUILD_TOP/system/tools/hidl/update-makefiles-helper.sh
 
 do_makefiles_update \
-  "vendor.amlogic.hardware:vendor/amlogic/common/interfaces" \
-  "android.hidl:system/libhidl/transport" \
-  "android.hardware:hardware/interfaces"
-  
-
-
+  "vendor.amlogic:hardware/amlogic/interfaces" \
+  "android.hardware:hardware/interfaces" \
+  "android.hidl:system/libhidl/transport"
